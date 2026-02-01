@@ -49,3 +49,11 @@ CREATE TABLE ger.fact_sales_tb (
     quantity       INT,
     currency_code  VARCHAR(20)
 );
+
+
+
+-- Validation queries (run after populating data)
+SELECT * FROM ger.dim_customer_tb;
+SELECT * FROM ger.dim_exchange_rate_tb;
+SELECT * FROM ger.dim_stores_tb;
+SELECT * FROM ger.fact_sales_tb;
